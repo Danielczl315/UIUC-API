@@ -64,7 +64,13 @@ bin/
 help/
 include/
 share/
-
+lib/
+lib64/
+lib64
 #celerybeat
 celerybeat-schedule.db
+
+#pip self check
+pip-selfcheck.json
+
 
