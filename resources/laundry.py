@@ -1,9 +1,12 @@
 from flask_restful import Resource
 import urllib2
 import json
+import redis
 
 class Laundry(Resource):
     def get(self):
-      request_url = "http://23.23.147.128/homes/mydata/urba7723"
-      response = urllib2.urlopen(request_url)
-      return json.load(response)
+        r = redis.StrictRedis(host='localhost', port=6379, db=0)
+        #print str(json.load(response))
+        
+        output = json.loads(r.get('app.tasks.laundry'))
+        return output

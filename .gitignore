@@ -58,3 +58,13 @@ target/
 # ctags
 **/tags
 
+
+# virtualenv
+bin/
+help/
+include/
+share/
+
+#celerybeat
+celerybeat-schedule.db
+
