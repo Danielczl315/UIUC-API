@@ -7,6 +7,9 @@ class Laundry(Resource):
     def get(self):
         r = redis.StrictRedis(host='localhost', port=6379, db=0)
         #print str(json.load(response))
-        
-        output = json.loads(r.get('app.tasks.laundry'))
+        output =""
+        try: 
+            output = json.loads(r.get('app.tasks.laundry'))
+        except Exception as e:
+            output = str(e)
         return output

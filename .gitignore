@@ -68,9 +68,10 @@ lib/
 lib64/
 lib64
 #celerybeat
-celerybeat-schedule.db
-
+celerybeat-schedule*
 #pip self check
 pip-selfcheck.json
 
+#vim
+**/*.swp
 
