@@ -4,7 +4,7 @@ from __future__ import absolute_import
 
 
 
-
+import time
 import urllib2
 import json
 import redis
@@ -38,11 +38,13 @@ def laundry_update():
 
     somelist = []
     i = 0
+    t = time.time()
     while(i < length):
         temp = {}
         temp['machine'] = machine[i]
         temp['name'] = name[i]
         temp['networked'] = network[i]
+        temp['timestamp'] = t
         somelist.append(json.dumps(temp))
         i = i + 1
         
