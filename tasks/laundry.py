@@ -47,8 +47,10 @@ def laundry_update():
         i = i + 1
         
     i = 0
- 
+    print id_str[i]
+    print somelist[i]
     while(i < length):
+        
         r.set(id_str[i], somelist[i])
         i = i + 1
 
