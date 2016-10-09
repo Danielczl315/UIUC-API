@@ -58,6 +58,7 @@ api.add_resource(Wifi, '/wifi')
 api.add_resource(Weather, '/weather')
 
 api.add_resource(Laundry, '/laundry')
+api.add_resource(LaundryID, '/laundry/<string:id>')
 
 api.add_resource(FacultyDirectory, '/directory/faculty')
 
