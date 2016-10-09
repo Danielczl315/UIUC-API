@@ -52,3 +52,4 @@ def laundry_update():
         r.set(id_str[i], somelist[i])
         i = i + 1
 
+
