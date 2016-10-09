@@ -5,7 +5,7 @@ from werkzeug.contrib.cache import SimpleCache
 from resources.dining import Dining, DiningInformation, DiningSearch, DiningToday
 from resources.weather import Weather
 from resources.wifi import Wifi, WifiNearMe
-from resources.laundry import Laundry
+from resources.laundry import Laundry, LaundryID
 from resources.main import Main
 from resources.free_food import FreeFood
 from resources.ews_status import EWSStatus
